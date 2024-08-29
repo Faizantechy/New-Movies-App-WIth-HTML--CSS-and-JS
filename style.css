@@ -35,7 +35,7 @@ body{
 
 .searchInput{
 
-    width: 25vh;
+    width: 60vh;
     padding: 12px;
     border-radius: 20px;
     outline: none;
@@ -173,6 +173,23 @@ padding: 10px;
 
     line-height: 20px;
 }
+.getMore{
+
+    width: 30vh;
+    padding: 15px;
+    color: white;
+    background-color: green;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 15px;
+    border: none;
+
+    &:hover{
+
+        background-color: rgb(7, 71, 7);
+
+    }
+}
 
 
 @media (min-width:393px) and(max-width:1223px){
@@ -187,4 +204,103 @@ padding: 10px;
         font-size: 3vh;
     }
 
+}
+
+
+/* General styles for small screens */
+@media (max-width: 600px) {
+    .searchInput {
+        width: 90%; /* Make it more flexible for small screens */
+    }
+
+    .movie-box {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 4vh; /* Slightly reduce size for better fit */
+    }
+
+    .btn {
+        width: 80%; /* Make buttons more responsive */
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 90vw; /* Use viewport width for smaller screens */
+        height: auto; /* Adjust height to auto */
+    }
+}
+
+/* Styles for medium screens */
+@media (min-width: 601px) and (max-width: 960px) {
+    .searchInput {
+        width: 80%; /* Make input field wider */
+    }
+
+    .movie-box {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 5vh; /* Keep this size consistent for clarity */
+    }
+
+    .btn {
+        width: 10rem;
+        font-size: 1.1rem; /* Slight increase */
+    }
+
+    .box {
+        width: 45vh;
+        height: 350px;
+    }
+}
+
+/* Styles for larger screens (no changes needed) */
+@media (min-width: 961px) and (max-width: 1223px) {
+    /* No specific styles needed, keep the existing layout */
+}
+
+/* Styles for extra-large screens */
+@media (min-width: 1224px) {
+    .searchInput {
+        width: 60vh; /* Maintain for larger screens */
+    }
+
+    h1 {
+        font-size: 6vh; /* Maintain for larger screens */
+    }
+
+    .btn {
+        width: 10rem;
+        font-size: 1.2rem; /* Maintain for larger screens */
+    }
+
+    .box {
+        width: 40vh;
+        height: 400px; /* Maintain for larger screens */
+    }
+
+    .movies {
+        padding: 2rem; /* Maintain for larger screens */
+    }
+}
+
+
+/* Specific styles for screens with a width of 440px and height of 331px */
+@media (max-width: 440px) and (max-height: 331px) {
+    h1 {
+        font-size: 5vh; /* Adjust this size as needed */
+        line-height: 1.2; /* Adjust line height for better spacing */
+    }
+
+    .searchInput {
+        width: 90%; /* Make the input flexible for small screens */
+    }
+
+    .btn {
+        width: 80%; /* Adjust button width for smaller screens */
+        font-size: 1rem; /* Keep font size consistent */
+    }
 }
